@@ -117,11 +117,16 @@ header p:first-child {
 }
 
 /* tablet */
-@media screen and (max-width:946px) {
+@media screen and (max-width: 946px) {
     header p:first-child {
         width: 35rem;
         margin: 0 auto;
     }
+}
+
+/* laptop */
+@media screen and (max-width: 1920px) {
+    
 }
 
 /***************************************** content *********************************************/
