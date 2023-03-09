@@ -20,6 +20,7 @@ header{
     padding-top: 4rem;
 }
 
+
 header img {
     border-radius: 50%;
     width: 15rem;
@@ -82,6 +83,37 @@ header p:first-child {
     font-weight: bold;
 }
 
+@media screen and (max-width: 425px) {
+    header {
+        width: 100%;
+        padding-top: 2.5rem;
+    }
+
+    header img {
+        width: 12rem;
+        height: 12rem;
+        margin-bottom: 1rem;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p:not(:first-child) {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+    }
+
+    header p:first-child {
+        width: 20rem;
+        margin: 0 auto;
+    }
+
+    .btn-content {
+        margin-top: 1.5rem;
+    }
+}
+
 
 /* content */
 
@@ -89,6 +121,13 @@ header p:first-child {
     display: flex;
     position: relative;
 }
+
+@media screen and (max-width: 425px) {
+    .container {
+        display: block;
+    }
+}
+
 
 aside {
     background-color: rgba(31, 78, 121, 255);
