@@ -212,7 +212,9 @@ main > h1 {
     }
 }
 
-/* Contact */
+
+/***************************************** Contact *********************************************/
+
 .header a{
     color: black;
 }
@@ -245,4 +247,15 @@ label {
     color: whitesmoke;
     font-weight: bold;
     cursor: pointer;
+}
+
+@media screen and (max-width: 425px) {
+    main h1:not(:first-child) {
+        margin-top: 4rem;
+        margin-bottom: 2rem;
+    }
+
+    .btn-div{
+        text-align: center;
+    }
 }
