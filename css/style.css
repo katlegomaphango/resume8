@@ -4,7 +4,8 @@ body {
     padding: 0;
 }
 
-/* header */
+/***************************************** Header/Banner *********************************************/
+
 header{
     background: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%), url(../images/bg.jpg);
     background-color: rgba(31, 78, 121, 255);
@@ -115,41 +116,21 @@ header p:first-child {
 }
 
 
-/* content */
+/***************************************** content *********************************************/
 
 .container {
     display: flex;
     position: relative;
 }
 
-@media screen and (max-width: 425px) {
-    .container {
-        display: block;
-    }
-}
-
+/* Aside */
 
 aside {
     background-color: rgba(31, 78, 121, 255);
     color: white;
-    padding-top: 4rem;
-    padding-left: 4rem;
-    padding-bottom: 8rem;
-    padding-right: 4rem;
+    /* padding: top right bottom left */
+    padding: 4rem 4rem 8rem 4rem;
     flex: 1;
-}
-
-aside .header > div{
-    text-align: center;
-}
-
-aside a{
-    text-decoration: none;
-    color: aliceblue;
-}
-
-aside .header li {
-    list-style: none;
 }
 
 .education, .skills, .interests {
@@ -190,7 +171,57 @@ main > h1 {
     padding-top: 2rem;
 }
 
+@media screen and (max-width: 425px) {
+    .container {
+        display: block;
+    }
+
+    /* aside */
+    aside {
+        /* padding: top right bottom left */
+        padding: 2rem 2.5rem 4rem 2.5rem;
+    }
+
+    .education{
+        margin-top: 0;
+    }
+
+    .aside-section_header {
+        font-size: 1.5rem;
+    }
+
+    /* corner accent */
+    .corner-accent {
+        border-left: 10px solid transparent;
+        border-right: 10px solid rgba(31, 78, 121, 255);
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid rgba(31, 78, 121, 255);
+        height: 8rem;
+        width: 8rem;
+    }
+
+    /* Main */
+    main {
+        /* margin: top right bottom left */
+        margin: 0;
+        padding: 4rem 2rem 5rem 2rem;
+    }
+
+    main > h1 {
+        margin: 0;
+    }
+}
+
 /* Contact */
+.header a{
+    color: black;
+}
+
+.header ul {
+    list-style: none;
+    padding-left: 0;
+}
+
 .input:not(:first-child), .btn {
     margin-top: 1rem;
 }
