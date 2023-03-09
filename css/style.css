@@ -26,6 +26,7 @@ header img {
     height: 15rem;
     object-fit: cover;
     border: 2px solid white;
+    margin-bottom: 2rem;
 }
 
 header h1 {
@@ -49,6 +50,7 @@ header p:first-child {
     list-style: none;
     font-size: 1.5rem;
     justify-content: center;
+    margin-top: 3rem;
 }
 
 .links ul a {
