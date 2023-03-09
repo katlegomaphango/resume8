@@ -1,0 +1,176 @@
+body {
+    font-family: 'Roboto', serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* header */
+header{
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%), url(../images/bg.jpg);
+    background-color: rgba(31, 78, 121, 255);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: auto 100%;
+    background-repeat: repeat;
+    width: 100vw;
+    height: 100vh;
+    color: whitesmoke;
+    justify-content: center;
+    text-align: center;
+    padding-top: 4rem;
+}
+
+header img {
+    border-radius: 50%;
+    width: 15rem;
+    height: 15rem;
+    object-fit: cover;
+    border: 2px solid white;
+}
+
+header h1 {
+    text-transform: uppercase;
+    font-size: 3rem;
+    line-height: 0.5;
+}
+
+header p:not(:first-child) {
+    font-size: 1.5rem;
+}
+
+header p:first-child {
+    width: 50rem;
+    margin: 0 auto;
+}
+
+.links ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.5rem;
+    justify-content: center;
+}
+
+.links ul a {
+    color: #ff7200;
+}
+
+.btn-content {
+    width: 140px;
+    height: 40px;
+    background: rgba(31, 78, 121, 255);
+    border: none;
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+}
+
+.btn-content a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 1rem;
+}
+
+.btn-content:hover {
+    border: 1px solid whitesmoke;
+    background: transparent;
+}
+
+.btn-content:hover a {
+    color: #ff7200;
+    font-weight: bold;
+}
+
+
+/* content */
+
+.container {
+    display: flex;
+    position: relative;
+}
+
+aside {
+    background-color: rgba(31, 78, 121, 255);
+    color: white;
+    padding-top: 4rem;
+    padding-left: 4rem;
+    padding-bottom: 8rem;
+    padding-right: 4rem;
+    flex: 1;
+}
+
+aside .header > div{
+    text-align: center;
+}
+
+aside a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+aside .header li {
+    list-style: none;
+}
+
+.education, .skills, .interests {
+    margin-top: 4rem;
+}
+
+.aside-section_header {
+    font-size: 2rem;
+}
+
+.corner-accent{
+    border-left: 20px solid transparent;
+    border-right: 20px solid rgba(31, 78, 121, 255);
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid rgba(31, 78, 121, 255);
+    height: 20rem;
+    width: 20rem;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+}
+
+main {
+    margin-top: 8rem;
+    margin-left: 4rem;
+    margin-bottom: 5rem;
+    margin-right: 4rem;
+    flex: 2;
+    position: relative;
+}
+
+main > h1 {
+    margin-top: 5rem;
+}
+
+.experience {
+    padding-top: 2rem;
+}
+
+/* Contact */
+.input:not(:first-child), .btn {
+    margin-top: 1rem;
+}
+
+label {
+    display: inline-block;
+    width: 5rem;
+    text-align: left;
+}
+
+.btn {
+    width: 5rem;
+    height: 2rem;
+    border: none;
+    background-color: cadetblue;
+}
+
+.btn:hover {
+    border: 2px solid cadetblue;
+    background-color: rgba(31, 78, 121, 255);
+    color: whitesmoke;
+    font-weight: bold;
+    cursor: pointer;
+}
